@@ -1,0 +1,61 @@
+.nav {
+    position: fixed;
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: black;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: 1.5em;
+    padding: 8px;
+    height: 40px;
+    width: 125px;
+    letter-spacing: 0.3rem;
+  }
+  
+  .v_span {
+    color: blue;
+    margin: 0;
+    position: absolute;
+    left: 90px;
+    transform: rotate(270deg);
+    animation: 4s linear 1s infinite turn
+  }
+  
+  .ul_nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .link {
+    display: block;
+    margin: auto 8px;
+    transition: 0.4s ease-in-out;
+   }
+   
+  .link:hover {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  @keyframes turn {
+    0% {
+     transform: rotate(0deg)
+    }
+    25% {
+      transform: rotate(270deg)
+    }
+    50% {
+      transform: rotate(270deg)
+    }
+    75% {
+      transform: rotate(360deg)
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
