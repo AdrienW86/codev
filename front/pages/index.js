@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import Banner from '../assets/clavier.jpg';
 import Background from '../assets/background.jpg';
 import Responsive from '../assets/responsive.jpg';
+
+import {articles} from './api/data'
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -47,7 +49,7 @@ export default function Home() {
         <ul className={styles.background_ul}>
           <li className={styles.background_li}> Site vitrine</li>
           <li className={styles.background_li}> E-commerce</li>
-          <li className={styles.background_li}> et bien d'autres...</li>
+          <li className={styles.background_li}> et plus encore...</li>
         </ul>
        
       </div>
@@ -58,16 +60,11 @@ export default function Home() {
        <button className={styles.btn_intro}>
           Voir les offres
         </button>
-          <p> Nos sites web sont 100% responsive pour une expérience maximale quelque soit le support
-            (ordinateurs, pc portables, tablettes, smartphone...)
-          </p>
+          <p> {articles[0].content} </p>
         </section>
 
         <section className={styles.home_intro_text2}>
-          <p> Dans le but d'améliorer aux mieux les performances de nos sites,
-              nous réalisons des audits SEO et des tests de performances sur nos applications.
-            
-          </p>
+          <p> {articles[1].content} </p>
           <button className={styles.btn_intro2}>
           Voir les offres
         </button>
@@ -81,13 +78,6 @@ export default function Home() {
         className={styles.background_img}
         alt="menu's picture"
       />
-       
-
-        
-
-
-
-
       </main>
      <Footer />
        

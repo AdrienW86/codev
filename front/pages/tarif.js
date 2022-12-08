@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Banner from '../assets/laptop.jpg';
 import styles from '../styles/Tarif.module.css';
 
+import {cards} from './api/data'
+
  const Tarif = () => {
   return (
     <>
@@ -31,37 +33,37 @@ import styles from '../styles/Tarif.module.css';
                     <h2 className={styles.card_title}> Tarif starter </h2>
                     <p className={styles.price}> à partir de <span className={styles.span_price}> 499€</span></p>
                     <ul className={styles.description}> 
-                        <li className={styles.li_card}> Création d'un site web via un CMS</li> 
-                        <li className={styles.li_card}> Optimisation SEO</li>
-                        <li className={styles.li_card}> Création d'un thème personalisé</li>
+                        <li className={styles.li_card}> {cards[0].description[0]}</li> 
+                        <li className={styles.li_card}> {cards[0].description[1]}</li>
+                        <li className={styles.li_card}> {cards[0].description[2]}</li>
                     </ul>
                     <button className={styles.btn_card}>
-                        C'est parti !
+                        C est parti !
                     </button>
                 </div>
                 <div className={styles.card}>
                     <h2 className={styles.card_title}> Tarif medium </h2>
                     <p className={styles.price}> à partir de <span className={styles.span_price}> 799€</span></p>
                     <ul className={styles.description}> 
-                        <li className={styles.li_card}> Création d'une application web </li> 
-                        <li className={styles.li_card}> Single page application</li>
-                        <li className={styles.li_card}> Optimisation SEO</li>
-                        <li className={styles.li_card}> Optimisation des performances</li>
+                        <li className={styles.li_card}> {cards[1].description[0]} </li> 
+                        <li className={styles.li_card}> {cards[1].description[1]}</li>
+                        <li className={styles.li_card}> {cards[1].description[2]}</li>
+                        <li className={styles.li_card}> {cards[1].description[3]}</li>
                     </ul>
                     <button className={styles.btn_card}>
-                        C'est parti !
+                        C est parti !
                     </button>
                 </div>
                 <div className={styles.card}>
                     <h2 className={styles.card_title}> Tarif personalisé </h2>
                     <p className={styles.price}> <span className={styles.span_price}> sur devis </span></p>
                     <ul className={styles.description}> 
-                        <li className={styles.li_card}> Création d'une application web sur mesure selon des besoin spécifiques</li> 
-                        <li className={styles.li_card}> Création des différents support nécessaires (API, base données...)</li>
-                        <li className={styles.li_card}> Optimisation des performances et du SEO </li>                      
+                        <li className={styles.li_card}>{cards[2].description[0]} </li> 
+                        <li className={styles.li_card}>{cards[2].description[1]} </li>
+                        <li className={styles.li_card}> {cards[2].description[2]} </li>                      
                     </ul>
                     <button className={styles.btn_card}>
-                        C'est parti !
+                        C est parti !
                     </button>
                 </div>
             </section>
