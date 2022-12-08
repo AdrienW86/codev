@@ -1,34 +1,122 @@
-.title {
-  font-size: 1.2em;
-  text-align: center;
-  color:white;
-  background: black;
-  margin: 0;
-  position: relative;
-  bottom: 20px;
-}
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 0;
 }
 
-.intro {
-  width: 90%;
-  margin: 0px auto;
-  background: rgb(43, 42, 42);
-  font-weight: bold;
-  padding: 8px;
-  color: white;
-  opacity: 0.8;
-  text-align: center;
-  border-radius: 8px;
-  border: 2px solid white;
+.hero {
+    display: flex;
+    margin: 70px 24px 0 0;
+    position: relative;
+    height: 200px;
+    width: 310px;
 }
 
-.last_product {
-  height: 160px;
-  width: 250px;
-  margin: auto;
+.home_intro_text {
+    position: relative;
+    width: 100%;
+    color: white;
+    padding: 32px;
+    line-height: 1.4;
+    font-weight: bold;
+    background: rgb(46, 45, 45);
+    border : 2px solid white;
 }
+
+.home_intro_text2 {
+    position: relative;
+    width: 100%;
+    color: rgb(46, 45, 45);
+    padding: 32px;
+    line-height: 1.4;
+    font-weight: bold;
+    background: white;
+}
+
+.btn_intro {
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    position: absolute;
+    top: -26px;
+    right: 30px;
+    padding-top: 6px;
+    height: 36px;
+    width: 120px;
+    margin: 8px auto;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 0);
+    background: white;
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.btn_intro:hover {
+    cursor: pointer;
+    color: white;
+    background: red;
+}
+
+.btn_intro2 {
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    position: absolute;
+    bottom: -26px;
+    right: 30px;
+    padding-top: 6px;
+    height: 36px;
+    width: 120px;
+    margin: 8px auto;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 0);
+    background: white;
+    transition: 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.btn_intro2:hover {
+    cursor: pointer;
+    color: white;
+    background: red;
+}
+
+.background_img_txt {
+    position: absolute;
+    right: 2px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.background_ul {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 8px;
+    position: relative;
+    left: 26px;
+    bottom: 8px;
+    margin: 0
+}
+
+.background_li {
+    background: rgb(46, 45, 45);
+    margin: 6px 16px;
+    padding: 6px;
+    border-radius: 8px;
+    opacity: 0.7;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.background_li:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.1)
+}
+

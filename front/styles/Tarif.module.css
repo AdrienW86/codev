@@ -1,0 +1,79 @@
+.menu {
+    display: flex;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_tarif{
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;   
+    border-radius: 8px;
+    background: white;
+    margin: 36px auto;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card:hover {
+    transform: scale(1.1)
+}
+
+.card_title { 
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.price {
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+.description {
+    height: 130px;
+    margin-top: 36px;
+    color: black;
+    padding: 0
+}
+
+.span_price {
+    font-weight: bold;
+    color: rgb(0, 121, 6);
+}
+
+.li_card {
+    list-style: none;
+    margin: 16px;
+    font-weight: bold;
+}
+
+.btn_card {
+    display: flex;
+    height: 36px;
+    width: 120px;  
+    font-weight: bold; 
+    border-radius: 8px;
+    margin: auto;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+    top: 20px;
+    border: 2px solid blue;
+    background: white;
+    color: blue;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn_card:hover {
+    border: none;
+    color: white;
+    background: blue;
+}

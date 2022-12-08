@@ -1,6 +1,7 @@
 import React from 'react';
-
+import Link from 'next/link';
 import styles from '../styles/Header.module.css';
+
 function Navbar() {
   return (
     <nav className={styles.nav}>
@@ -11,15 +12,15 @@ function Navbar() {
         <section className={styles.navigation}>
             <ul className={styles.ul_nav}>
                 <li className={styles.link}> 
-                    Accueil       
+                    <Link href="/"> Accueil </Link>       
                 </li>
                 <li className={styles.link}> 
-                    Tarif 
+                    <Link href= "/tarif"> Tarif </Link>    
                 </li>
                 <li className={styles.link}> 
-                    Contact          
+                    <Link href= "/contact"> Contact </Link>           
                 </li>
-             </ul>
+            </ul>
         </section> 
     </nav>
   )

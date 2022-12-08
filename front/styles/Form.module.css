@@ -1,0 +1,74 @@
+.form_container {
+    background: url('../assets/phone_background3.jpg') no-repeat;
+    position: relative;
+    bottom: 60px;
+    height: 550px;
+}
+
+.form {
+    position: relative;
+    top: 50px;
+    margin: 100px auto;
+    width: 280px;
+    display: flex;
+    font-weight: bold;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+    background: rgb(46, 45, 45);
+}
+
+.input {
+    margin: 16px;
+}
+
+.btn_submit {
+    font-weight: bold;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    transition: 0.4s ease-in-out;
+}
+
+.btn_submit:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.background2_img {
+    position: absolute;
+    top: 300px;
+}
+
+.contact_title {
+    text-align: center;
+    padding: 4px;
+    color: white;
+    background: rgb(46, 45, 45);
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+}
+
+.background2_container {
+  position: relative;
+  bottom: 60px;
+  height: 100px;
+}
+
+.contact_link {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    padding-left: 20px;
+    color: white;
+    background: grey;
+    margin: 10px auto;
+    opacity: 0.7;
+}

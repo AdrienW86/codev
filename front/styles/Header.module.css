@@ -5,6 +5,7 @@
     width: 100%;
     color: rgb(255, 255, 255);
     background: black;
+    z-index: 100;
   }
   
   .logo {
@@ -47,15 +48,23 @@
      transform: rotate(0deg)
     }
     25% {
-      transform: rotate(270deg)
+      transform: rotate(-90deg)
     }
     50% {
-      transform: rotate(270deg)
+      transform: rotate(-90deg)
     }
     75% {
-      transform: rotate(360deg)
+      transform: rotate(0deg)
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(0deg);
     }
   }
+
+  
+.copyright {
+  color: white;
+  height: 50px;
+  padding: 12px;
+  font-size: 1.2em;
+}

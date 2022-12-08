@@ -1,56 +1,96 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Navbar from '../components/Navbar';
-import Banner from '../assets/banner.jpg';
-import Client from '../assets/client.png';
+import Footer from '../components/Footer';
+import Banner from '../assets/clavier.jpg';
+import Background from '../assets/background.jpg';
+import Responsive from '../assets/responsive.jpg';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Codev</title>
         <meta name="description" content="Création de sites web" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      < Navbar />
+      <Navbar />
         <section className={styles.banner}>
           <Image 
             src={Banner}
-            height={960}
-            width={1440}
+            height={4000}
+            width={6000}
+            loading='lazy'
             layout='responsive'
             className={styles.banner_img}
-          />
-          <h1 className={styles.title}> Création de sites web </h1>
-        </section>
-
-
-      <main className={styles.main}>
-        <section className={styles.last_product}>
-          <Image 
-            src={Client}
-            height={960}
-            width={1440}
-            layout='responsive'
-            className={styles.banner_img}
+            alt="banner's picture"
           />
         </section>
-        <section className={styles.intro}>
-          <article>
-            Nous vous proposons la meilleure solution possible pour votre projet web.
-            Que ce soit pour un site vitrine, un site e-commerce ou tout autre demande, 
-            nous nous efforcerons de trouver la solution la plus adaptée à vos besoins 
-            et à votre budget.
-          </article>
-        </section>
+        <h1 className={styles.title}> Création de sites web </h1>
        
+
+      
+     <section className={styles.hero}>
+     <div>
+      <Image 
+        src={Background}
+        height={4000}
+        width={6000}
+        loading='lazy'
+        
+        className={styles.background_img}
+        alt="menu's picture"
+      />
+      </div>
+      <div className={styles.background_img_txt}>
+        <ul className={styles.background_ul}>
+          <li className={styles.background_li}> Site vitrine</li>
+          <li className={styles.background_li}> E-commerce</li>
+          <li className={styles.background_li}> et bien d'autres...</li>
+        </ul>
+       
+      </div>
+    </section>    
+    <main className={styles.main}>
+        
+       <section className={styles.home_intro_text}>
+       <button className={styles.btn_intro}>
+          Voir les offres
+        </button>
+          <p> Nos sites web sont 100% responsive pour une expérience maximale quelque soit le support
+            (ordinateurs, pc portables, tablettes, smartphone...)
+          </p>
+        </section>
+
+        <section className={styles.home_intro_text2}>
+          <p> Dans le but d'améliorer aux mieux les performances de nos sites,
+              nous réalisons des audits SEO et des tests de performances sur nos applications.
+            
+          </p>
+          <button className={styles.btn_intro2}>
+          Voir les offres
+        </button>
+        </section>
+        <Image 
+        src={Responsive}
+        height={4000}
+        width={6000}
+        loading='lazy'
+        layout='responsive'
+        className={styles.background_img}
+        alt="menu's picture"
+      />
+       
+
+        
+
+
+
+
       </main>
-
-      <footer className={styles.footer}>
+     <Footer />
        
-      </footer>
     </>
   )
 }

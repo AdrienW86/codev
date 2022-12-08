@@ -1,8 +1,9 @@
 html,
 body {
-  background: rgb(43, 42, 42);
+  background: rgb(233, 232, 232);
   padding: 0;
   margin: 0;
+ 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -14,4 +15,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(255, 255, 255);
+  background: rgb(46, 45, 45);
+  margin: -4px 0 -36px 0;
+  padding: 8px;
+  font-size: 1.5em;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  background: black;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0
 }
