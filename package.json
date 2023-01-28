@@ -1,0 +1,26 @@
+{
+  "name": "codev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "classnames": "^2.3.2",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.5",
+    "react-transition-group": "^4.4.5",
+    "react-waypoint": "^10.3.0",
+    "styled-jsx": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1"
+  }
+}

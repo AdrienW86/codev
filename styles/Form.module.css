@@ -1,0 +1,39 @@
+.form {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
+}
+
+.input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid silver;
+    width: 100%;
+    font-family: arial;
+  }
+  
+  .label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #3291ff;
+    display: inline-block;
+  }
+
+  .form_btn { 
+    padding: 8px 16px;
+    color: #3291ff;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #3291ff;
+    border: 2px solid #3291ff;
+    transition: .4s ease-in-out;
+  }
+
+  .form_btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3291ff; 
+  }

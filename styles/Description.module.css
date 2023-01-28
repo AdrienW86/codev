@@ -1,0 +1,100 @@
+.description {
+   background-color: white; 
+   display: flex;
+   width: 1020px;
+   padding: 20px;
+   opacity: 1;
+   z-index: 3;
+   position: absolute;
+   top: 1040px;
+   border-radius: 32px 0 32px 0;
+   animation: slide_left 1s ease;
+}
+
+.description__img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.card__image {
+    max-width: 510px; 
+    padding: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 32px 0 0 0;
+}
+
+.description__card {
+    text-align: center;
+    width: 510px;
+}
+
+.h2__card {
+    margin-top: 40px;
+    color: rgb(22, 22, 77);
+}
+
+.ul__container {
+    display: flex;
+}
+
+.description__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.description__li {
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+}
+
+.checked {
+    margin-right: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+    .description {
+        width: 740px;
+        top: 1190px;
+    }
+    .card__image, .description__card {      
+        max-width: 370px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .description {
+        width: 90%;
+        flex-direction: column;
+        top: 1450px;
+    }
+    .card__image, .description__card {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .description {
+        top: 1500px;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        top: 1550px;
+    }   
+}
+
+@keyframes slide_left {
+    from {
+      margin-left: -100px;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}

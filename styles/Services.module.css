@@ -1,0 +1,144 @@
+/* Services.js */
+.services  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1020px;
+  margin-top : 400px;
+}
+
+.services__articles {
+  display: flex;
+  width: 630px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.services .services__articles:nth-child(2n) {
+  flex-direction: row;
+  left: 380px;
+  text-align: right;
+  animation: slide__right 1s ease
+}
+
+.services .services__articles:nth-child(2n+1) {
+  flex-direction: row-reverse;
+  text-align: left;
+  animation: slide__left 1s ease
+}
+
+.services__h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5em; 
+  height: 40px;
+  z-index: 3
+}
+
+.services__articles {
+  display: flex;
+  width: 630px;
+  position: relative;
+}
+
+.article {
+  padding: 18px 60px;
+  width: 1020px;
+  color: rgb(36, 31, 31);
+  background-color: rgb(241, 243, 243);
+  z-index: 3;
+  opacity: 0.7;
+  border-radius: 16px;
+  margin: 30px -40px;
+  transition: 0.4s ease-in-out;
+}
+
+.article__title {
+  color: #3291ff;
+  z-index: 3;
+}
+
+.article__p {
+  display: flex;
+  width: 400px;
+}
+
+.article__image {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  z-index: 3;
+  transition: 0.4s ease-in-out;
+}   
+
+.article:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .services {
+    margin-top: 500px;
+  }
+  .services__articles{ 
+    position: static;
+    justify-content: center;
+    margin: 30px auto;
+    width: 660px;
+  }
+  .article {
+  width: 550px
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .services {
+    margin-top: 600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .services {
+    margin-top: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services {
+    margin-top: 800px;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slide__left {
+  from {   
+    opacity: 0;
+    left : -400px;
+  }
+  to {     
+    opacity: 0.7;
+    left: 0px;
+  }
+}
+
+@keyframes slide__right {
+  from {
+    margin-left: 400px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0px;
+    opacity: 0.7;
+  }
+}
+
+@keyframes visibility {
+  from {    
+    opacity: 0;
+  }
+  to {     
+    opacity: 1;
+  }
+}
