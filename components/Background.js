@@ -17,7 +17,6 @@ import styles from '../styles/Background.module.css';
   return (  
     <section className={styles.background__container}>     
         <div className={styles.background}>
-          <h2 className={styles.h2__title}> Venez découvrir nos tarifs </h2>
             <div className={styles.article__container}>         
                 <Image 
                     src={background}  
@@ -55,11 +54,10 @@ import styles from '../styles/Background.module.css';
             <div>         
                 <Image 
                     src={background3}  
-                    className={styles.background__image2}
+                    className={styles.background__image}
                     priority='blur'
                     alt="fond d'écran avec un clavier"
-                />
-               
+                />          
             </div>
         </div>
     </section>     

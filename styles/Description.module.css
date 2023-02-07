@@ -1,14 +1,15 @@
 .description {
-   background-color: white; 
-   display: flex;
-   width: 1020px;
-   padding: 20px;
-   opacity: 1;
-   z-index: 3;
-   position: absolute;
-   top: 1040px;
-   border-radius: 32px 0 32px 0;
-   animation: slide_left 1s ease;
+    display: flex;
+    width: 1020px;
+    padding: 20px;
+    opacity: 1;
+    z-index: 3;
+    position: relative;
+    bottom: 200px;
+    margin: 30px auto;
+    border-radius: 32px 0 32px 0;
+    background-color: rgb(255, 255, 255); 
+    animation: slide_left 1s ease;
 }
 
 .description__img {
@@ -59,7 +60,6 @@
 @media screen and (max-width: 1200px) {
     .description {
         width: 740px;
-        top: 1190px;
     }
     .card__image, .description__card {      
         max-width: 370px;
@@ -67,34 +67,39 @@
 }
 
 @media screen and (max-width: 830px) {
-    .description {
+    .description {   
         width: 90%;
-        flex-direction: column;
-        top: 1450px;
+        flex-direction: column;      
     }
     .card__image, .description__card {
         min-width: 100%;
     }
 }
 
-@media screen and (max-width: 570px) {
-    .description {
-        top: 1500px;
-    }  
+
+@media screen and (max-width: 600px) {
+    .description__card { 
+        width: 100%
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .description {
-        top: 1550px;
-    }   
+@media screen and (max-width: 470px) {   
+    .ul__container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .description__ul {
+       margin: 0;
+    }
 }
 
 @keyframes slide_left {
-    from {
-      margin-left: -100px;
+    from {    
       opacity: 0;
+      left: 250px;
     }
     to {
       opacity: 1;
+      left: 0
     }
 }

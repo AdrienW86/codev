@@ -1,39 +1,96 @@
 .background__container {
    display: flex;
    flex-direction: column; 
+   overflow: hidden;
 }
 
-.background {
-    height: 100vh;
+.background, .background2, .background3, .background4{
     position: relative;
-    top: 30px;
-    background-color: #3291ff;
+    top: 30px;   
+    background-color: rgb(22, 22, 77); 
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.background__image {
-    object-fit: cover;
-    width: 100%;
+.background, .background2, .background4 {
     height: 100vh;
-    top: -45%;
-    left: 50%;
-    opacity: 0.7;
-    transform: translate(-50%, 50%);
-    position: fixed;
-    background-color: #3291ff;
 }
 
-.background__image2 {
+.background3 {
+    height: 199vh;  
+    justify-content: center;
+}
+
+.background__image, .background__image2, .background__image3 {
     object-fit: cover;
     width: 100%;
     height: 100vh;
     top: -45%;
     left: 50%;
-    opacity: 0.7;
     transform: translate(-50%, 50%);
     position: fixed;
-    background-color: #3291ff;
 }
+
+.background__image {
+    opacity: 0.4
+ }
+
+ .background__image2, .background__image3 {
+    opacity: 0.2
+ }
+
+.background__image3 {
+   height: 100vh;
+   top: -45%;
+}
+
+/* index.js */
+
+.h2__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+    height: 200px;
+    background-color: rgb(22, 22, 77);
+    width: 100%;
+    font-size: larger;
+    color: white;
+    padding: 50px;
+    letter-spacing: 0.1em; 
+    line-height: -4px; 
+}
+
+.services__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: larger;
+    color: white;
+    letter-spacing: 0.1em; 
+    line-height: -4px; 
+    border-top:  2px solid white;
+    border-bottom:  2px solid white;
+    background-color: rgb(22, 22, 77);
+    padding-top: 80px
+}
+
+.services__span {
+  position: relative;
+  bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 1440px;
+}
+
+/* tarifs.js */
 
 .article__container {
     display: flex;
@@ -50,6 +107,7 @@
     position: relative;
     top: 300px; 
 }
+
 .article {
     display: flex;
     flex-direction: column;
@@ -75,18 +133,19 @@
     color: #3291ff;
 }
 
-.banner__text {
+.h2__title {
     position: absolute;
     text-align: center;
     top: 920px;
     margin: 0;
     padding: 20px;
-    height: 400px;
+    height: 300px;
     width: 100%;
     z-index: 10;
     color: white;
     background-color: rgb(22, 22, 77);
 }
+
 .background__article2 {
     width: 20%;
     position: relative;
@@ -96,21 +155,6 @@
     font-family: 'Courier New', Courier, monospace;
     background-color: white;
     margin: 0 auto;
- }
-
-.h2__title {
-    position: absolute;
-    left: 20%;
-    top: 54px;
-    height: 100px;
-    padding: 20px;
-    width: 60%;
-    z-index: 3;
-    font-size: 2.5em; 
-    text-align: center;
-    color: #3291ff;
-    opacity: 0.7;
-    background-color: rgb(255, 255, 255);
 }
 
 .price__span {
@@ -123,4 +167,52 @@
     position: relative;
     left: 80px;
     color: green
+}
+
+.services  {
+    display: flex;
+    margin: auto;
+    width: 1020px;
+    flex-direction: column;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .background{
+        height: 120vh
+    } 
+    .services {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .background{
+        height: 170vh
+    } 
+    .background2{
+        height: 130vh
+    } 
+    
+    .h2__container{
+        height: 100%;
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .background2{
+        height: 150vh
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    .background3{
+        height: 150vh
+    } 
+}
+
+  @media screen and (max-width: 470px) {
+    .background{
+        height: 190vh
+    } 
 }

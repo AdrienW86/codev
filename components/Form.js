@@ -156,7 +156,6 @@ const Form = () => {
 							)}
 						</div>
 					</div>
-
 					<div
 						style={{
 							backgroundColor: "#f5f5f5",
@@ -189,7 +188,6 @@ const Form = () => {
 							)}
 						</div>
 					</div>
-
 					<div
 						style={{
 							display: "flex",

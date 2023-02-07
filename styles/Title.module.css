@@ -1,0 +1,36 @@
+.h1__title {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    height: 100px;
+    width: 60%;
+    z-index: 3;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 2.5em; 
+    text-align: center;
+    color: #3291ff;
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1000px) {
+    .h1__title {
+      left: 10%;
+      width: 80%;
+      padding: 30px;
+      height: 120px;
+    }   
+}
+
+@media screen and (max-width: 700px) {
+    .h1__title {
+      font-size: 2em;
+      padding: 20px;
+    }   
+}
+
+@media screen and (max-width: 360px) {
+    .h1__title {
+      font-size: 1.7em;
+    }   
+}

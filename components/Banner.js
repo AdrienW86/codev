@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Banner.module.css'
-import imgBanner from '../assets/chouette_cyber.png'
+import imgBanner from '../assets/banner.jpg'
 
 const Banner = () => {
   return (
