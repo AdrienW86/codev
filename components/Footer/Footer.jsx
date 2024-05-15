@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
         <div className={styles.p}>
-            <Link href='https://code-v.fr' className={styles.p} >
+            <Link href='https://www.instagram.com/codev66000/' className={styles.p} >
                 <Image 
                     width={20}
                     height={20}
@@ -21,7 +21,7 @@ export default function Footer() {
                     alt="logo instagram"
                 />
             </Link>
-            <Link href='https://code-v.fr' className={styles.li} >
+            <Link href='https://www.facebook.com/profile.php?id=61550727002805&locale=fr_FR' className={styles.li} >
                 <Image 
                     width={20}
                     height={20}
@@ -29,7 +29,7 @@ export default function Footer() {
                     alt="logo facebook"
                 />
             </Link>
-            <Link href='https://code-v.fr' className={styles.li} >
+            <Link href='https://twitter.com/Codev66' className={styles.li} >
                 <Image 
                     width={20}
                     height={20}

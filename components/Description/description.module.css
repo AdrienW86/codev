@@ -1,9 +1,24 @@
 .p {
-    padding: 34px 12px 34px 12px;
+    padding: 30px 18px;
     line-height: 1.5em;
     text-align: center;
     font-weight: bold;
     font-size: 1em;
     font-family: "Roboto", sans-serif;
-    border-bottom: 1px solid black;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    letter-spacing: 0.2em;
+    border: 1px solid black;
+    margin: 50px auto 80px auto;
+    font-family: "Roboto", sans-serif; 
 }
