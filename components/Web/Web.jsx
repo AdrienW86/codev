@@ -50,10 +50,13 @@ export default function Web() {
             <p className={styles.description}> 
                 Il existe bien entendu encore d'autres types de sites web tel que les landing page 
                 (marketing externe à votre site), 
-                les blogs (rédaction d'articles), les porte-folio (présentation de votre travail)
+                les blogs (rédaction d'articles), les porte-folio (présentation de votre travail),
                 les C.V en ligne et les applications web (similaire à un application mobile mais sans
                 nécessité de l'installer sur votre appareil). N'hésitez pas à nous contacter pour plus d'informations.
         </p>
+        <div className={styles.box}>
+                <Link href='/contact' className={styles.btn}> NOUS CONTACTER </Link>
+            </div>
         </div>
     </section>
   )
