@@ -44,9 +44,9 @@ export default function Header() {
       <section className={styles.menu}>
         <ul>
           <li> <Link className={styles.li} href="/" onClick={handleMenuToggle}> Accueil </Link></li>
-          <li> <Link className={styles.li} href="/imprimerie" onClick={handleMenuToggle}> Imprimerie </Link></li>
-          <li> <Link className={styles.li} href="/multimedia" onClick={handleMenuToggle}> Multimédia </Link></li>
-          <li> <Link className={styles.li} href="/web" onClick={handleMenuToggle}> Services web </Link></li>
+          <li> <Link className={styles.li} href="/imprimerie" onClick={handleMenuToggle}> Sites web </Link></li>
+          <li> <Link className={styles.li} href="/multimedia" onClick={handleMenuToggle}> Applications web </Link></li>
+          <li> <Link className={styles.li} href="/web" onClick={handleMenuToggle}> Applications mobiles </Link></li>
           <li> <Link className={styles.li} href="/contact" onClick={handleMenuToggle}> Contact </Link></li>
         </ul>
       </section>}
