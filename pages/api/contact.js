@@ -33,7 +33,7 @@ export default async function handler(req, res) {
 	const sendGridMail = {
 		to: process.env.EMAIL_CLIENT,
 		from: process.env.EMAIL_MASTER,
-		templateId: "d-4b09f8cd687547538045df26ea558e04",
+		templateId: process.env.TEMPLATE,
 		dynamic_template_data: {
 			name: name,
 			email: email,
