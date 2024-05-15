@@ -1,0 +1,117 @@
+.header {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+}
+
+.logoContainer {
+    width: 30%;
+    padding: 5px;
+}
+
+.boxTitle {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.h1 {
+    font-family: "Roboto", sans-serif; 
+    text-align: center;
+    font-size: 2em;
+ 
+}
+
+.buttonBox {
+    display: flex;
+    width: 30%;
+}
+
+.hamburger {
+    position: absolute;
+    top: 37px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    z-index: 30;
+    border: none;
+    display: flex;
+    opacity: 0.7;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: space-between;
+}
+    
+.open {
+    height: 19px;
+}
+     
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition: transform 0.3s, opacity 0.3s;
+}
+    
+.line:hover{
+    background-color: #000000;
+}
+      
+.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+    background-color: #000000;
+}
+    
+.open .line:nth-child(2) {
+    opacity: 0;
+    background-color: #000000;
+}
+      
+.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    background-color: #000000;
+}
+    
+.open .line, .close .line {
+    background-color: #000000;
+}
+    
+.open:hover .line, .close:hover .line {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.menu {
+    position: absolute;
+    z-index: 20;
+    top: 100px;
+    height: 250px;
+    width: 100%;
+    background-color: #F8EFF1;
+    border-bottom: 1px solid #000000;
+}
+
+.li {
+    color: black;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #000000;
+    font-family: "Roboto", sans-serif;
+    height: 50px;
+    transition: .4s ease-in-out
+}
+
+.li:hover {
+    color: rgb(65, 191, 232);
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.description {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-family: "Roboto", sans-serif; 
+    text-align: center;
+    font-style: italic;
+    padding: 8px;
+    height: 40px;
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    justify-content: center;
+    
+}
