@@ -14,7 +14,7 @@ export default function Contact() {
             <p className={styles.txt}> <a href='mailto:support@code-v.fr'> Email: support@code-v.fr </a> </p>
         </div>
         <div>
-           <Form fetchPriority={undefined}/> 
+           <Form /> 
         </div>
     </section>
   )
