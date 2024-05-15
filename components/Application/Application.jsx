@@ -5,7 +5,7 @@ import styles from './application.module.css'
 export default function Application() {
   return (
     <section className={styles.web}>
-        <h2 className={styles.h2}> Les applications web </h2>
+        <h2 className={styles.h2}> Applications web </h2>
         <p className={styles.p}> 
             Selon votre activité, vous serez peut-être amené à vouloir développer 
             une application web pour votre entreprise.
