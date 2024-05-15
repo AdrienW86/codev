@@ -19,10 +19,10 @@ export default function Application() {
         
             <p className={styles.description}> 
                 N'importe quel type de site internet peut devenir une application web. 
-                L'avantage d'une application web est qu'elle est qu'elle nécessite un budget
+                L'avantage d'une application web est qu'elle nécessite un budget
                 moins conséquent qu'une application mobile si elle n'as pas vocation à être
                 monétiser sur les stores. L'application web peut prendre de nombreuses formes 
-                et vous en avez sûrement déjà utiliser sans le savoir. Votre messagerie en ligne, 
+                et vous en avez sûrement déjà utilisée sans le savoir. Votre messagerie en ligne, 
                 un outil de convertion de photos, un générateur de facture, un jeu... 
                 La seule limite des applications web et votre imagination !
                 N'hésitez pas à nous contacter pour plus d'informations.
