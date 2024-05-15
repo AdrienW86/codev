@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-       <Banner background={Background}/>
+       <Banner link = '/contact' background={Background}/>
        <Description 
         txt = "CONTACT"
         link = '/contact'
@@ -28,7 +28,7 @@ export default function Home() {
         sticker = "Les sites web" 
         color = "black"
       />
-       <Banner background={Background2}/>
+       <Banner link = '/web' background={Background2}/>
        <Description 
         txt = "VOIR"
         link = '/web'
@@ -38,7 +38,7 @@ export default function Home() {
         sticker = "Les applications web" 
         color = "white"
         />
-       <Banner background={Background3}/>
+       <Banner link = '/appli' background={Background3}/>
        <Description 
         txt = "VOIR"
         link = '/appli'
@@ -47,7 +47,7 @@ export default function Home() {
        <Sticker 
         sticker = "Les applications mobiles" 
         color = "black" />
-       <Banner background={Background4}/>
+       <Banner link = '/mobiles' background={Background4}/>
        <Description
         txt = "VOIR"
         link = '/mobiles'
