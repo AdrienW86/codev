@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         <div className={styles.p} > 
             <Link href='https://code-v.fr' className={styles.li} >
-            © CODEV - {currentYear}
+            Copyright © CODEV - {currentYear}. Tous droits réservés.
             </Link> 
         </div>
     </footer>

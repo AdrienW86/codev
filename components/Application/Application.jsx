@@ -1,11 +1,8 @@
 import React from 'react'
-import Banner from '../Banner/Banner'
 import Link from 'next/link'
-import Appli from '@/assets/appli.png'
-
 import styles from './application.module.css'
 
-export default function Web() {
+export default function Application() {
   return (
     <section className={styles.web}>
         <h2 className={styles.h2}> Les applications web </h2>
@@ -33,9 +30,6 @@ export default function Web() {
             <div className={styles.box}>
                 <Link href='/contact' className={styles.btn}> NOUS CONTACTER </Link>
             </div>
-       
-        
-       
     </section>
   )
 }
