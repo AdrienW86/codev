@@ -1,5 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
+import Background from '@/assets/contact.png'
+import Banner from '@/components/Banner/Banner'
+import Contact from '@/components/Contact/Contact'
 import styles from '@/styles/Home.module.css'
 
 export default function index() {
@@ -12,7 +15,8 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      
+      <Banner background={Background} />
+      <Contact />
       </main>
     </>
   )

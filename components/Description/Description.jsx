@@ -5,9 +5,9 @@ import styles from './description.module.css'
 
 export default function Description(props) {
   return (
-    <section>
+    <section className={props.color === 'white' ? styles.white : styles.black}>
         <p className={styles.p}> {props.description} </p>
-        <Link className={styles.btn} href={props.link}> {props.txt} </Link>
+        <Link className={props.color === 'white' ? styles.btnWhite : styles.btnBlack} href={props.link}> {props.txt} </Link>
     </section>
   )
 }

@@ -37,7 +37,10 @@ export default function Header() {
         </button>
         </div>
     </section>
-    <Sticker sticker = "Solutions numériques" />
+    <Sticker 
+      sticker = "Solutions numériques"
+      color = "white"
+    />
     
     
     {isMenuOpen && 

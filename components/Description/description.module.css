@@ -7,7 +7,12 @@
     font-family: "Roboto", sans-serif;
 }
 
-.btn {
+.white {
+    color: white;
+    background-color: black;
+}
+
+.btnWhite, .btnBlack {
     display: flex;
     justify-content: center;
     padding: 12px;
@@ -15,10 +20,22 @@
     text-align: center;
     border-radius: 20px;
     font-weight: bolder;
-    background-color: black;
+    
     color: white;
     letter-spacing: 0.2em;
-    border: 1px solid black;
+    
     margin: 50px auto 80px auto;
     font-family: "Roboto", sans-serif; 
+}
+
+.btnWhite {
+    color: white;
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.btnBlack {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
 }

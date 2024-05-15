@@ -22,24 +22,36 @@ export default function Home() {
        <Description 
         txt = "CONTACT"
         link = '/contact'
+        color = "white"
         description = "Chez Codev nous développons des sites web et des applications mobiles qui vous aident à vous démarquer dans le monde numérique. Nous comprenons votre entreprise et apportons des solutions adaptées à vos besoins. Faites confiance à notre expertise pour construire votre identité numérique et atteindre vos objectifs en ligne.  "/>
-       <Sticker sticker = "Les sites web" />
+       <Sticker 
+        sticker = "Les sites web" 
+        color = "black"
+      />
        <Banner background={Background2}/>
        <Description 
         txt = "VOIR"
         link = '/web'
+        color = "black"
         description = "Nous développons des sites web selon vos besoins et votre budget. Vous avez la possibilité entre plusieurs types de sites web: site vitrine, e-commerce, portfolio, blog... ou tout autre demande. Voici quelques exemples pour vous faire une idée.  "/>
-       <Sticker sticker = "Les applications web" />
+       <Sticker 
+        sticker = "Les applications web" 
+        color = "white"
+        />
        <Banner background={Background3}/>
        <Description 
         txt = "VOIR"
         link = '/appli'
+        color = "white"
         description = "Nous développons applications web pour répondre à des demandes spécifiques selon vos besoins (générateur de facture, gestion de stock, application de messagerie...).  "/>
-       <Sticker sticker = "Les applications mobiles" />
+       <Sticker 
+        sticker = "Les applications mobiles" 
+        color = "black" />
        <Banner background={Background4}/>
        <Description
         txt = "VOIR"
         link = '/mobiles'
+        color = "black"
         description = "Nous développons des applications mobiles selon vos objectifs et vos besoins (commercialisation de votre application sur les stores, utilisation personnelle ou besoin métier pour votre entreprise)."/>
       </main>
     </>

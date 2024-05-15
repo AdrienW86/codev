@@ -1,0 +1,23 @@
+.p {
+    padding: 30px 18px;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.infos {
+    padding: 12px;
+    background-color: black;
+}
+
+.txt {
+    color: orangered;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
