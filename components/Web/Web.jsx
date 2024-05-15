@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../Banner/Banner'
-import Background from '@/assets/background2.png'
+import Link from 'next/link'
 import Website from '@/assets/website.png'
 import Shop from '@/assets/commerce.png'
 import Landing from '@/assets/landing.png'
@@ -15,7 +15,7 @@ export default function Web() {
             à choisir entre un site vitrine et un site e-commerce pour votre activité. 
             Voyns les principales différences entre ces derniers.
         </p>
-        <div>
+        <div className={styles.sectionWhite}>
             <h3 className={styles.h3}> Les sites vitrines </h3>
             <Banner background={Website} />
             <p className={styles.description}> 
@@ -26,8 +26,11 @@ export default function Web() {
                 un formulaire de contact pour qu'ils puissent vous poser diverses questions 
                 concernant votre activité directement sur votre site. 
             </p>
+            <div className={styles.box}>
+                <Link href='https://www.le-parc-de-gouts.fr' className={styles.btn}> Voir un exemple </Link>
+            </div>
         </div>
-        <div>
+        <div className={styles.sectionBlack}>
             <h3 className={styles.black}> Les sites e-commerce </h3>
             <Banner background={Shop} />
             <p className={styles.p}> 
@@ -37,8 +40,11 @@ export default function Web() {
                 directement régler leurs achats sur votre site web. Vous êtes prévenus en temps réel 
                 pour chaque commande réalisée.
         </p>
+            <div className={styles.box}>
+                <Link href='https://www.boutiquedufoot.fr' className={styles.btn}> Voir un exemple </Link>
+            </div>
         </div>
-        <div>
+        <div className={styles.sectionWhite}>
             <h3 className={styles.h3}> Les autres types de sites </h3>
             <Banner background={Landing} />
             <p className={styles.description}> 
