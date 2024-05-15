@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from '@/components/Form/Form'
 import styles from './contact.module.css'
 
 export default function Contact() {
@@ -10,10 +11,10 @@ export default function Contact() {
         </p>
         <div className={styles.infos}>
             <p className={styles.txt}> Téléphone: 06.66.67.27.09</p>
-            <p className={styles.txt}> Email: 06.66.67.27.09</p>
+            <p className={styles.txt}> <a href='mailto:support@code-v.fr'> Email: support@code-v.fr </a> </p>
         </div>
         <div>
-            
+           <Form fetchPriority={undefined}/> 
         </div>
     </section>
   )

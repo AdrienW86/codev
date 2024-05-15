@@ -20,7 +20,7 @@
     text-align: center;
     border-radius: 20px;
     font-weight: bolder;
-    
+    transition: .4s ease-in-out;
     color: white;
     letter-spacing: 0.2em;
     
@@ -38,4 +38,10 @@
     color: orangered;
     background-color: rgb(255, 255, 255);
     border: 1px solid orangered;
+}
+
+.btnWhite:hover, .btnBlack:hover {
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
 }

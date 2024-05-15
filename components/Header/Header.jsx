@@ -19,8 +19,7 @@ export default function Header() {
             <Image 
                 width={90}
                 height={90}
-                src={Logo}
-                priority
+                src={Logo}                
                 alt="logo"
             />
         </Link>
@@ -41,15 +40,13 @@ export default function Header() {
       sticker = "Solutions numériques"
       color = "white"
     />
-    
-    
     {isMenuOpen && 
       <section className={styles.menu}>
         <ul>
           <li> <Link className={styles.li} href="/" onClick={handleMenuToggle}> Accueil </Link></li>
-          <li> <Link className={styles.li} href="/imprimerie" onClick={handleMenuToggle}> Sites web </Link></li>
-          <li> <Link className={styles.li} href="/multimedia" onClick={handleMenuToggle}> Applications web </Link></li>
-          <li> <Link className={styles.li} href="/web" onClick={handleMenuToggle}> Applications mobiles </Link></li>
+          <li> <Link className={styles.li} href="/web" onClick={handleMenuToggle}> Sites web </Link></li>
+          <li> <Link className={styles.li} href="/appli" onClick={handleMenuToggle}> Applications web </Link></li>
+          <li> <Link className={styles.li} href="/mobiles" onClick={handleMenuToggle}> Applications mobiles </Link></li>
           <li> <Link className={styles.li} href="/contact" onClick={handleMenuToggle}> Contact </Link></li>
         </ul>
       </section>}

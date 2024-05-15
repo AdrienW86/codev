@@ -112,6 +112,6 @@
 }
 
 .li:hover {
-    color: rgb(65, 191, 232);
+    color: orangered;
     cursor: pointer;
 }
