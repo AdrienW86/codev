@@ -15,18 +15,14 @@ export default function Header() {
   <header className={styles.header}>
     <section className={styles.container}>
         <div className={styles.logoContainer}>
-        <Link href='/'>
-            <Image 
-                width={90}
-                height={90}
-                src={Logo}                
-                alt="logo"
-            />
-        </Link>
-        </div>
-        <div className={styles.boxTitle}>
-            <h1 className={styles.h1}> Codev </h1>
-        
+          <Link href='/'>
+              <Image 
+                  width={90}
+                  height={90}
+                  src={Logo}                
+                  alt="logo"
+              />
+          </Link>
         </div>
         <div className={styles.buttonBox}> 
         <button className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`} onClick={handleMenuToggle} aria-label="hamburger button">
