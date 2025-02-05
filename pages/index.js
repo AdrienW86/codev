@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
        <Title title="Solutions numériques"/>
-       <BannerVideo />
+       <BannerVideo link ='/contact'/>
        <Description 
         txt = "CONTACT"
         link = '/contact'
