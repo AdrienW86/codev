@@ -16,6 +16,6 @@
 }
 
 .black {
-    color: orangered;
-    background-color: rgb(255, 255, 255);
+    color: white;
+    background: linear-gradient(45deg,#2c3340, orangered, #2c3340)
 }
