@@ -1,8 +1,8 @@
+"use client"
+
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import Logo from '@/assets/logo2.png'
-import Sticker from '../Sticker/Sticker';
+import { motion } from "framer-motion"
 import styles from './header.module.css'
 
 export default function Header() {
@@ -14,28 +14,29 @@ export default function Header() {
   return (
   <header className={styles.header}>
     <section className={styles.container}>
-        <div className={styles.logoContainer}>
-          <Link href='/'>
-              <Image 
-                  width={90}
-                  height={90}
-                  src={Logo}                
-                  alt="logo"
-              />
-          </Link>
-        </div>
-        <div className={styles.buttonBox}> 
+      <div className={styles.logoContainer}>
+        <Link href='/'>
+          <motion.img
+            initial={{ opacity: 0, x: -150 }} 
+            animate={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.5 }}
+            width={90}
+            height={90}
+            src="/logo2.png"               
+            alt="logo"
+            >             
+          </motion.img>         
+        </Link>
+      </div>
+      <div className={styles.buttonBox}> 
         <button className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`} onClick={handleMenuToggle} aria-label="hamburger button">
-            <span className={styles.line}> </span>
+            <span className={styles.line}></span>
             <span className={styles.line}></span>
             <span className={styles.line}></span>
         </button>
-        </div>
+      </div>
     </section>
-    <Sticker 
-      sticker = "Solutions numériques"
-      color = "white"
-    />
+    
     {isMenuOpen && 
       <section className={styles.menu}>
         <ul>

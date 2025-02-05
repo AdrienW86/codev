@@ -1,5 +1,5 @@
 .p {
-    padding: 30px 18px;
+    padding: 18px;
     line-height: 1.5em;
     text-align: center;
     font-weight: bold;
@@ -12,31 +12,36 @@
     background-color: #2c3340;
 }
 
+.black {
+    color: white;
+    background-color: orangered;
+}
+
 .btnWhite, .btnBlack {
     display: flex;
     justify-content: center;
     padding: 12px;
-    width: 50%;
+    width: 200px;
     text-align: center;
     border-radius: 20px;
     font-weight: bolder;
     transition: .4s ease-in-out;
     color: white;
     letter-spacing: 0.2em;
-    margin: 50px auto 80px auto;
+    margin: 50px auto;
     font-family: "Roboto", sans-serif; 
 }
 
 .btnWhite {
     color: orangered;
-    background-color: #2c3340;
-    border: 1px solid orangered;
+    background-color: #ffffff;
+    border: 2px solid orangered;
 }
 
 .btnBlack {
-    color: orangered;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid orangered;
+    color: #2c3340;
+    background-color: #ffffff;
+    border: 2px solid #2c3340;
 }
 
 .btnWhite:hover, .btnBlack:hover {
@@ -44,3 +49,45 @@
     color: white;
     background-color: orangered;
 }
+
+/* Style du bouton */
+.btnWhite {
+    position: relative;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: px solid white; /* Bordure transparente */
+    background: linear-gradient(45deg, orangered, #ff877c); /* Dégradé initial */
+    background-size: 400% 400%; /* Taille du dégradé pour permettre un léger mouvement */
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+    border-radius: 5px;
+    overflow: hidden; /* Cache la partie qui dépasse du dégradé */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: wave-animation 4s ease-in-out infinite; /* Animation douce */
+  }
+  
+  /* Animation de vague très subtile */
+  @keyframes wave-animation {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 25% 25%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    75% {
+      background-position: 75% 75%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  
+  
+  

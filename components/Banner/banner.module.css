@@ -7,9 +7,32 @@
     width: 100%;
     transition: .4s ease-in-out;
     overflow: hidden;
-    aspect-ratio: 4/4;
+    aspect-ratio: 4/3;
     max-height: 100vh;
+    max-width: 1400px;
+    margin: auto;
 }
+
+.bannervideo {
+    position: relative;
+    width: 100%;
+    transition: .4s ease-in-out;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    max-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.backgroundvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cela permet à la vidéo de couvrir tout l'espace sans déformer son ratio */
+    z-index: -1; /* La vidéo sera en arrière-plan */
+  }
 
 .description {
     position: absolute;

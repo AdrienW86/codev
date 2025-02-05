@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Title from '@/components/Title/Title'
 import Banner from '@/components/Banner/Banner'
-import Background from '@/assets/background.png'
+import BannerVideo from '@/components/Banner/BannerVideo'
+
 import Background2 from '@/assets/background2.png'
 import Background3 from '@/assets/background3.png'
 import Background4 from '@/assets/background4.png'
@@ -18,7 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-       <Banner link = '/contact' background={Background}/>
+       <Title title="Solutions numériques"/>
+       <BannerVideo />
        <Description 
         txt = "CONTACT"
         link = '/contact'

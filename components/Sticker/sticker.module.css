@@ -1,12 +1,11 @@
 .white, .black {
     width: 100%;
-   
     font-family: "Roboto", sans-serif; 
     text-align: center;
     font-style: italic;
-    height: 50px;
+    height: 70px;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.7em;
     flex-direction: column;
     justify-content: center;
 }
@@ -17,6 +16,6 @@
 }
 
 .black {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    color: orangered;
+    background-color: rgb(255, 255, 255);
 }
