@@ -5,11 +5,11 @@
     font-weight: bold;
     font-size: 1em;
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(45deg,#4d5c79,  #2c3340 ,white, #2c3340 );
-
-    background-size: 400% 400%; /* Largeur du dégradé pour l'animation */
+    background: linear-gradient(45deg,rgb(0, 0, 0), #919191 );
+    transition: color 0.3s, border-color 0.3s;
+    background-size: 200% 200%; /* Largeur du dégradé pour l'animation */
     -webkit-background-clip: text; /* Applique le dégradé au texte uniquement */
-    color: transparent; /* Rendre le texte transparent pour ne voir que le dégradé */
+    color: white; /* Rendre le texte transparent pour ne voir que le dégradé */
     animation: gradient-animation 10s ease infinite; /* Animation du dégradé */
 }
 
@@ -25,7 +25,7 @@
 
 .black, .btnBlack {
   position: relative;
-  padding: 12px 30px;
+  padding: 40px;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
   /* Dégradé animé */
-  background: linear-gradient(45deg,#2c3340, white, #2c3340 , #4d5c79);
+  background: linear-gradient(90deg, #d7dce6, #2c3340);
   background-size: 200% 200%; /* Taille pour rendre l'animation plus large */
   animation: gradient-animation 10s ease infinite; /* Animation continue */
   transition: color 0.3s, border-color 0.3s;
@@ -45,13 +45,13 @@
 /* Animation du dégradé */
 @keyframes gradient-animation {
   0% {
-    background-position: 100% 100%;
+    background-position: 100% 110%;
   }
   50% {
     background-position: 0% 0%;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: 100% 110%;
   }
 }
 

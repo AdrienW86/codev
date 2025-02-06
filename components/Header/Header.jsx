@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 import styles from './header.module.css'
 
 export default function Header() {
@@ -10,6 +11,10 @@ export default function Header() {
   const handleMenuToggle = () => {
       setIsMenuOpen(!isMenuOpen);
   };
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Animation rejouée chaque fois que l'élément entre dans la vue
+    threshold: 0.1, // Déclenche l'animation lorsque 10% de l'élément est visible
+  });
 
   return (
   <header className={styles.header}>
@@ -17,6 +22,7 @@ export default function Header() {
       <div className={styles.logoContainer}>
         <Link href='/'>
           <motion.img
+           ref={ref} // Attacher l'observateur à la balise <p>
             initial={{ opacity: 0, x: -150 }} 
             animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.5 }}

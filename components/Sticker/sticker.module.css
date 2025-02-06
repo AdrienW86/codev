@@ -11,7 +11,7 @@
 }
 
 .white {
-    background-color: #2c3340;
+    background: linear-gradient(45deg,#2c3340, orangered, #2c3340);
     color: white;
 }
 
