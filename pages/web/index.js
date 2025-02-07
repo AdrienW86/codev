@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Title from '@/components/Title/Title'
 import Background from '@/assets/background2.png'
 import Banner from '@/components/Banner/Banner'
 import Web from '@/components/Web/Web'
@@ -15,6 +16,7 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+      <Title title="Les sites web"/>
       <Banner background={Background} />
       <Web />
       </main>

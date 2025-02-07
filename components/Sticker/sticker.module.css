@@ -8,14 +8,6 @@
     font-size: 1.7em;
     flex-direction: column;
     justify-content: center;
-}
-
-.white {
     background: linear-gradient(45deg,#2c3340, orangered, #2c3340);
     color: white;
-}
-
-.black {
-    color: white;
-    background: linear-gradient(45deg,#2c3340, orangered, #2c3340)
 }
